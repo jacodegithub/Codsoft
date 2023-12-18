@@ -5,6 +5,8 @@ const morgan = require('morgan')
 const bodyParser = require('body-parser')
 require('dotenv').config()
 let cors = require('cors')
+const cookieParser = require('cookie-parser')
+const errorHandler = require('./middleWare/error')
 
 
 // Middleware
