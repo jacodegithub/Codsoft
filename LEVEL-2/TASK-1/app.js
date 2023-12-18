@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(errorHandler);
 
 // Routes middleware
-app.use(authRoutes)
+app.use(`/api`, authRoutes)
 
 // Database connection
 mongoose.connect(process.env.DATABASE )
